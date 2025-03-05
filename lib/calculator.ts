@@ -135,8 +135,8 @@ function evaluateExpression(expression: string): number {
   throw new Error('Invalid expression format');
 }
 
-// Export functions using CommonJS
-module.exports = {
+// Export functions using TypeScript exports
+export {
   add,
   subtract,
   evaluateExpression
