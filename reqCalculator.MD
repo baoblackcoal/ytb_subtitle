@@ -102,7 +102,7 @@
 ├── /tests             // 集成测试用例
 ├── app.ts             // 应用入口文件，负责解析输入并调用计算逻辑
 ├── package.json       // 项目依赖及脚本配置
-├── req.MD            // 需求文档
+├── reqCalculator.MD            // 需求文档
 ├── jest.config.js        # Jest 测试框架配置文件
 ├── .gitignore            # Git 忽略文件配置
 ├── node_modules/         # (项目依赖包目录，通常不纳入版本控制)
