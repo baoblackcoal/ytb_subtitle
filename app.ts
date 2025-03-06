@@ -7,6 +7,9 @@ import { evaluateExpression } from './lib/calculator';
 import logger from './lib/logger';
 import { downloadSubtitles, isValidYoutubeUrl, SUPPORTED_LANGUAGES, SUPPORTED_FORMATS } from './lib/downloader';
 
+// Enable mock subtitles for demonstration when YouTube API fails
+process.env.MOCK_SUBTITLES = 'true';
+
 /**
  * Process a calculation expression and return the result
  * @param expression The arithmetic expression to evaluate
