@@ -2,14 +2,14 @@
  * Logger module for the calculator application
  * Uses Winston for logging functionality
  */
-const winston = require('winston');
+import * as winston from 'winston';
 
 // Create a logger instance
-const calculatorLogger = winston.createLogger({
+const logger = winston.createLogger({
   level: 'info',
   format: winston.format.combine(
     winston.format.timestamp(),
-    winston.format.printf((info: { level: string; message: string; timestamp: string }) => {
+    winston.format.printf((info) => {
       return `${info.timestamp} ${info.level}: ${info.message}`;
     })
   ),
@@ -21,4 +21,4 @@ const calculatorLogger = winston.createLogger({
   ]
 });
 
-module.exports = { default: calculatorLogger };
+export default logger;

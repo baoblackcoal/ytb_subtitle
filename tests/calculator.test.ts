@@ -1,7 +1,8 @@
 /**
  * Tests for the calculator module
  */
-import { add, subtract, evaluateExpression } from '../lib/calculator';
+const calculator = require('../lib/calculator');
+const { add, subtract, evaluateExpression } = calculator;
 
 describe('Calculator Basic Operations', () => {
   // Test addition function
